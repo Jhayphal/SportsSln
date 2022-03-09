@@ -3,9 +3,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Moq;
 using SportsStore.Infrastructure;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -14,7 +12,7 @@ namespace SportsStore.Tests
     public class PageLinkTagHelperTests
     {
         [Fact]
-        public void CanGeneratePageLinks()
+        public void Can_Generate_Page_Links()
         {
             var urlHelper = new Mock<IUrlHelper>();
             urlHelper
